@@ -1,0 +1,166 @@
+#wrapper{
+	min-height: 100%;
+	width: 100%;
+	margin-bottom: -45vh;
+	display: inline-block;
+	position: absolute;
+	background-image: url("../img/empirestate.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -200px;
+}
+
+.header{
+	font-family: 'vigaregular';
+	font-size: 2rem;
+	text-align: center;
+	width: 100%;
+}
+
+
+.bubbles {
+    display: inline-block;
+    position: absolute;
+    z-index: 99;
+    width: 100vw;
+    height: 90vh;
+    top: 0px;
+    background-image: url(../img/bubbles.svg);
+    background-size: cover;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.border{
+	position: absolute;
+    min-width: 100%;
+    bottom: 0px;
+    top: 50%;
+    background-image: url(../img/border.svg);
+	background-position: center;
+    background-repeat: no-repeat;
+}
+
+.border p {
+    margin-top: 40%;
+    padding: 10%;
+}
+
+.border .txt{
+	background-color: rgb(249, 176, 158);
+	height: 100%;
+	padding-bottom: 3rem;
+}
+
+.dropbtn{
+	width: 50px;
+	height: 50px;
+}
+
+.video-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	top:20%;
+	justify-content: center;
+	position: absolute;
+	z-index: 100;
+}
+
+.vid iframe{
+	width: 90vw;
+	height: 30%;
+	cursor: pointer; cursor: hand;
+}
+
+.txt .title-info{
+	font-family: 'ralewayregular';
+	font-size: 4rem;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	padding-top: 1%;
+}
+
+.txt .caption-info{
+	font-family: 'ralewaylight';
+	margin: 0;
+	padding:0;
+	padding-left: 10%;
+}
+
+.txt .description-info{
+	font-family: 'ralewayregular';
+	margin-top: 0;
+}
+
+button .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 6px;
+    background-color: white;
+	margin: 0;
+	margin-bottom: 4px;
+	margin-left: 4px;
+    transition: 0.4s;
+}
+
+
+@media all and (min-width: 700px){
+
+	.border{
+		background-image: url(../img/border02.svg);
+    	height: auto;
+    	top: 60%;
+    	background-position: -300px -200px;
+	}
+	
+	.border p {
+		margin-top: 25%;
+    	padding: 5%;
+	
+	}
+	
+	.txt .caption-info{
+		font-size: 1.5rem;
+		padding-left: 5%;
+	}
+	
+	.txt .description-info{font-size: 2rem;}
+}
+
+@media all and (min-width: 719px){
+	.vid iframe{
+		width: 90vw;
+		height: 40%;
+	}
+}
+
+@media all and (min-width: 1440px){
+	#wrapper{
+		background-position: 400px -500px;
+		background-size:auto;
+	}
+	
+	.vid iframe{
+		width: 70vw;
+		height: 70%;
+	}
+	
+	.border{
+		display: inline-block;
+		position: absolute;
+		width: 100vw;
+		height: 45vh;
+		bottom: -20%;
+		top:80%;
+		background-position: -300px -100px;
+	}
+	
+	.bubbles{
+		height: 200vh;
+		top:-50%;
+	}
+
+
+}
